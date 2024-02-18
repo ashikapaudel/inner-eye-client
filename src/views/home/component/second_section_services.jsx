@@ -16,7 +16,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 function SecondSectionServices() {
   const[openRegistrationDialog,setopenRegistrationDialog] = useState(false);
-  const[openFreeBookDialog,setopenFreeBookDialog] = useState()
+  const[openFreeBookDialog,setopenFreeBookDialog] = useState(false)
 
 
   return <Box >
