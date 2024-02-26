@@ -216,12 +216,12 @@ function FreeEbookFormPopup() {
         justifyContent: "center",
       }}
     >
-      <FormControlLabel
+      {/* <FormControlLabel
         control={<Checkbox defaultChecked />}
         label="I hereby agree to the present and future terms & conditions of inner eye pvt.ltd"
         value = {isTermsChecked}
         onChange = {(e)=> setIsTermsChecked(e.target.value)}
-      />
+      /> */}
     </Grid>
     <Grid
       item

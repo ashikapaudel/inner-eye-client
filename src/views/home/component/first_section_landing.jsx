@@ -2,8 +2,36 @@ import React from 'react';
 import yoga from '../../../assets/images/yoga.png';
 import { Box, Button, Typography,  } from '@mui/material';
 import OrangeDivider from 'src/components/ui/orange_divider';
+import { useSelector,useDispatch } from 'react-redux';
+
+// import { increment,decrementByAmount,incrementByAmount, incrementByAge,decrementByAge } from 'src/redux/api/home_slice_api';
+
 
 function FirstSectionLanding() {
+ const dispatch = useDispatch();
+  const value = useSelector((state)=> state.home?.value);
+
+  // function handleIncrement(){
+  //   dispatch(increment());
+  // };
+  // function handleDecrement(){
+  //   dispatch(decrement());
+  // }
+  // function handleIncrementByAmount(){
+  //   dispatch(incrementByAmount())
+  // };
+
+  // function handleDecrementByAmount(){
+  //   dispatch(decrementByAmount())
+  // }
+  // function handleIncrementByAge(){
+  //   dispatch(incrementByAge())
+  // }
+  // function handleDecrementByAge(){
+  //   dispatch(decrementByAge())
+  // }
+  
+
   return (
     <div>
       <Box
@@ -14,7 +42,8 @@ function FirstSectionLanding() {
           // border: '2px solid black'
           flexDirection: {xs: "column-reverse", md:"row"}
           }}
-        >
+        > 
+         {/* <h1>My Value {value}</h1> */}
           <Box sx ={{
                     maxWidth:"40rem" ,
                     height: "100%", 
@@ -63,6 +92,12 @@ function FirstSectionLanding() {
                                               >
                                                About Us
                                               </Button>
+                                              {/* <Button onClick={handleIncrement}style={{border:"2px solid back",color:"black"}}>Increment Me</Button>
+                                              <Button onClick = {handleDecrement}style={{border:"2px solid back",color:"black"}}>Decrement Me</Button>
+                                              <Button onClick={handleIncrementByAmount}style={{border:"2px solid back",color:"black"}}>Increment By Amount</Button>
+                                              <Button onClick={handleDecrementByAmount}style={{border:"2px solid back",color:"black"}}>Deccrement By Amount</Button>
+                                              <Button onClick={handleIncrementByAge}style={{border:"2px solid back",color:"black"}}>Increment By Age</Button>
+                                              <Button onClick={handleDecrementByAge}style={{border:"2px solid back",color:"black"}}>Decrement By Age</Button> */}
                                               </Box>
                                               <div style ={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                                               <img src= {yoga} alt='yoga image' style={{maxHeight:"550px"}}/>

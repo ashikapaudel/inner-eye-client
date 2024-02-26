@@ -1,20 +1,16 @@
-import React from 'react'
-import Divider from "@mui/material/Divider";
 
-import {Box} from "@mui/material";
+import React from 'react'
+import { Divider,Box } from '@mui/material'
 
 function OrangeDivider({children}) {
   return (
-  <Box sx={{display:"flex",alignItems:"center",gap:"12px"}}>
-    <Box sx={{height:"1px",width:"50px",backgroundColor:"accent.main"}}>
-          
-        </Box>
+    <Box sx={{display:"flex",alignItems:"center",gap:"12px"}}>
+      <Box sx={{width:"50px", backgroundColor:"accent.main",height:"1px"}}/>
       
-        {children}
-        <Box sx={{height:"1px", width:"50px",
-        backgroundColor:"accent.main"}}>
-        </Box>
-  </Box>
+      {children}
+      <Box sx={{width:"50px", backgroundColor:"accent.main",height:"1px"}}/>
+      
+    </Box>
   )
 }
 

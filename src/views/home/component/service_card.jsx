@@ -6,7 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-function ServiceCard() {
+function ServiceCard( {ServiceCard}) {
   return (
     // <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
     <Card sx={{ maxWidth: 275 ,
@@ -15,12 +15,12 @@ function ServiceCard() {
       <CardContent>
         <Typography sx={{ fontWeight:"600" }} 
         className='responsive_fontsize18'>
-          Sound Healing
+          {item?.tittle}
         </Typography>
        
         <Typography sx={{ fontWeight:"14px",color:"white"}}
          className='responsive_fontsize14'>
-        Lorem ipsum dolor sit amet dolor sit bdsa Lorem ipsum dolor sit amet dolor sit bdsa Lorem ipsum dolor sit amet dolor sit bdsa 
+          {item?.description}
         </Typography>
         
       </CardContent>

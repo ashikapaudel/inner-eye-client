@@ -38,7 +38,7 @@ function RegistrationFormPopup() {
   // };
   const handleSubmit = (e)=>{
     e.preventDefault();
-  console.log("data", 
+  const data ={
   name,
   gender,
   age,
@@ -51,16 +51,18 @@ function RegistrationFormPopup() {
   affilations,
   teamSize,
   memberNumber,
-  isTermsChecked)
- }
-  // const handleInputChange = (e)=>{
-  //   console.log("e",e);
-  //   const name = e.target?.name;
-  //   const value = e.target?.value;
-  //   console.log("name, value", name,value);
-  //   setData(...data,name,value)
-  // }
-
+  isTermsChecked,
+ };
+};
+//   const handleInputChange = (e)=>{
+//     console.log("e",e);
+//     const name = e.target?.name;
+//     const value = e.target?.value;
+//     console.log("name, value", name,value);
+//     setData(...data,name,value)
+//   }
+//  console.log("data",data);
+//  dispatchEvent(addRegistration(data));
 
   return (
     <div>
